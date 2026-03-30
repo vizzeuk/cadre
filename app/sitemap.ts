@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { client, sanityIsConfigured } from "@/sanity/lib/client";
 import { allSlugsQuery } from "@/sanity/lib/queries";
 
-const BASE_URL = "https://cadresolutions.cl";
+const BASE_URL = "https://cadre.cl";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
