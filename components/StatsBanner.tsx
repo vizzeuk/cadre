@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "+ Horas", label: "Recuperadas para ti" },
+  { value: "+ Horas", label: "Disponibles para ti" },
   { value: "80%", label: "Menos tareas manuales" },
   { value: "< 4s", label: "Respuesta de sistemas" },
   { value: "24h", label: "Respuesta diagnóstico" },

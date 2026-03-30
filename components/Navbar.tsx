@@ -29,7 +29,7 @@ export default function Navbar() {
         }`}
       >
         {/* Logo */}
-        <a href="#top" className="group flex items-center gap-3">
+        <a href="/" className="group flex items-center gap-3">
           <div className="relative flex h-9 w-9 items-center justify-center rounded-lg overflow-hidden">
             <Image
               src="/cadre-logo.png"

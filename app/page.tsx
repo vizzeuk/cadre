@@ -20,6 +20,9 @@ import SectionReveal from "@/components/SectionReveal";
 import Navbar from "@/components/Navbar";
 import StatsBanner from "@/components/StatsBanner";
 import ContactForm from "@/components/ContactForm";
+import Faq from "@/components/Faq";
+import Footer from "@/components/Footer";
+import Methodology from "@/components/Methodology";
 
 /* ─── Data ─── */
 const marqueeItems = [
@@ -49,7 +52,7 @@ const problemCards = [
   {
     title: "Silos de información",
     description:
-      "Marketing, ventas y operaciones trabajan con datos separados, generando errores y malas decisiones.",
+      "La desconexión de los flujos de información interna compromete la precisión operativa y la calidad de las decisiones.",
     icon: <Layers3 className="h-5 w-5" />,
   },
 ];
@@ -122,7 +125,7 @@ export default function Home() {
           className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-zinc-300 backdrop-blur"
         >
           <Zap className="h-3 w-3 text-zinc-300" />
-          Transformación digital para PYMEs
+          Transformación digital para Empresas
         </motion.span>
 
         {/* Animated headline */}
@@ -171,7 +174,7 @@ export default function Home() {
           {/* Secondary */}
           <span className="flex items-center gap-1.5 text-sm text-zinc-500">
             <CheckCircle2 className="h-4 w-4 text-zinc-500" />
-            Respuesta en menos de 24 horas hábiles
+            Respuesta en menos de 1 día hábil
           </span>
         </motion.div>
 
@@ -220,11 +223,11 @@ export default function Home() {
           <h2 className="font-display max-w-3xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Tu operación no necesita más esfuerzo.
             <br />
-            <span className="text-zinc-400">Necesita mejor sistema.</span>
+            <span className="text-zinc-400">Necesita un mejor sistema.</span>
           </h2>
           <p className="mt-5 max-w-2xl text-zinc-400">
             Si hoy dependes de procesos manuales, tu crecimiento siempre chocará con
-            los mismos límites. Este es el patrón que vemos en la mayoría de PYMEs antes
+            los mismos límites. Este es el patrón que vemos en la mayoría de Empresas antes
             de transformar su operación.
           </p>
         </SectionReveal>
@@ -237,6 +240,11 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* ════════════════════════════════════════
+          METHODOLOGY
+      ════════════════════════════════════════ */}
+      <Methodology />
 
       {/* ════════════════════════════════════════
           STACK / SOLUTION SECTION
@@ -299,6 +307,13 @@ export default function Home() {
       </section>
 
       {/* ════════════════════════════════════════
+          FAQ
+      ════════════════════════════════════════ */}
+      <SectionReveal className="relative z-10">
+        <Faq />
+      </SectionReveal>
+
+      {/* ════════════════════════════════════════
           CTA FINAL
       ════════════════════════════════════════ */}
       <section
@@ -327,7 +342,7 @@ export default function Home() {
                 </h2>
                 <p className="mt-5 text-zinc-400 leading-relaxed">
                   En una sesión estratégica revisamos tus procesos actuales y definimos
-                  un plan de automatización con impacto directo en productividad y ventas.
+                  un plan de acción con impacto directo en tu negocio.
                 </p>
                 {/* Trust signals */}
                 <ul className="mt-8 space-y-2.5">
@@ -355,42 +370,7 @@ export default function Home() {
       {/* ════════════════════════════════════════
           FOOTER
       ════════════════════════════════════════ */}
-      <footer className="relative z-10 border-t border-white/[0.07]">
-        <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-5 px-4 py-10 text-xs text-zinc-500 sm:flex-row sm:px-6 lg:px-8">
-          {/* Brand */}
-          <div className="flex flex-col items-center gap-1 sm:items-start">
-            <p className="font-display font-semibold tracking-[0.2em] text-zinc-300">
-              CADRE SOLUTIONS
-            </p>
-            <p>Transformación digital y automatización para PYMEs</p>
-          </div>
-
-          {/* Center */}
-          <p className="text-zinc-600">
-            © {new Date().getFullYear()} CADRE Solutions. Todos los derechos reservados.
-          </p>
-
-          {/* Social */}
-          <div className="flex items-center gap-4">
-            <a
-              href="mailto:hola@cadresolutions.com"
-              className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 text-zinc-500 transition-colors hover:border-white/20 hover:text-white"
-              aria-label="Email"
-            >
-              <Mail className="h-4 w-4" />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 text-zinc-500 transition-colors hover:border-white/20 hover:text-white"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-4 w-4" />
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

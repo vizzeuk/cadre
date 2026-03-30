@@ -93,7 +93,7 @@ export default function ContactForm() {
               ¡Solicitud recibida!
             </h3>
             <p className="mt-2 text-sm text-zinc-400">
-              Nos pondremos en contacto en menos de 24 horas hábiles.
+              Nos pondremos en contacto en menos de 1 día hábil.
             </p>
           </div>
           <button
@@ -175,7 +175,7 @@ export default function ContactForm() {
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                placeholder="+54 9 11 1234-5678"
+                placeholder="+56 9 11 1234-5678"
                 className={inputClass}
               />
             </div>

@@ -16,10 +16,10 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://cadre.cl"),
-  title: "CADRE Solutions | Transformación Digital para PYMEs",
+  title: "CADRE Solutions | Transformación Digital para Empresas",
   description:
-    "Automatización, sistemas a medida y transformación digital para PYMEs que quieren crecer sin contratar por inercia.",
-  keywords: ["transformación digital", "automatización", "PYMEs", "n8n", "Supabase", "Vercel"],
+    "Automatización, sistemas a medida y transformación digital para Empresas que quieren crecer sin contratar por inercia, Inteligencia Artificial y sin depender de soluciones genéricas.",
+  keywords: ["transformación digital", "automatización", "PYMEs", "n8n", "Supabase", "Vercel","Inteligencia Artificial", "Sistemas a medida"],
   icons: {
     icon: [
       { url: "/cadre-logo.png", type: "image/png" },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "CADRE Solutions",
-    description: "Sistemas digitales a medida para PYMEs.",
+    description: "Sistemas digitales a medida para Empresas.",
     type: "website",
     images: [
       {
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "CADRE Solutions",
-    description: "Sistemas digitales a medida para PYMEs.",
+    description: "Sistemas digitales a medida para Empresas.",
     images: ["/cadre-logo.png"],
   },
 };
