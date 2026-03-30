@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -29,7 +30,7 @@ export default function Navbar() {
         }`}
       >
         {/* Logo */}
-        <a href="/" className="group flex items-center gap-3">
+        <Link href="/" className="group flex items-center gap-3">
           <div className="relative flex h-9 w-9 items-center justify-center rounded-lg overflow-hidden">
             <Image
               src="/cadre-logo.png"
@@ -43,7 +44,7 @@ export default function Navbar() {
           <span className="font-display text-sm font-semibold tracking-[0.2em] text-white">
             CADRE SOLUTIONS
           </span>
-        </a>
+        </Link>
 
         {/* CTA */}
         <a
